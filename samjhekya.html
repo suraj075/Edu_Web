@@ -1,0 +1,894 @@
+
+<html>
+    <head>
+        <title>SamjheKya.com</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+           .top{
+                height: 0%;
+                width: 100%;
+                background-color:white;
+            }
+             
+            #text1, #text2, #text3,#text4,#text5,#text6,#text7{
+                font-family: 'Courier New', Courier, monospace;
+                float: left;
+                margin-left: 300px;
+                margin-top: -50px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            #text1{
+                margin-left: 400px;
+            }
+            #text2{
+                margin-left: 590px;
+            }
+            #text3{
+                margin-left: 730px;
+            }
+            #text4{
+                margin-left: 850px;
+            }
+            #text5{
+                margin-left: 950px;
+            }
+            #text7{
+                margin-left: 1060px;
+            }
+            #text6{
+                margin-left: 1160px;
+            }
+            .main{
+                width:100%;
+                height: 550px;
+                background: #dfe5f0;
+                margin-top: 70px;
+            }
+            
+            
+           #content{
+            padding-left: 200px;
+            padding-top: 130px;
+            font-size: 55px;
+           }
+            #content span1{
+                color: #528cf7;
+                font-size: 50px;
+            }
+            #content span2{
+                font-size: 25px;
+            }
+            .login{
+                height: 380px;
+                width: 400px;
+                border: 2px solid #81878C;
+                border-radius: 10px;
+                background: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding :30px 40px;
+                box-shadow: 0 0 5px black;
+                margin-left: 720px;
+                margin-top: -370px;
+            }
+            .login h5{
+                font-size: 40px;
+                text-align: center;
+                /* padding-top: 17px; */
+            }
+            .login .input-box{
+                position: relative;
+                width: 100%;
+                height: 50px;
+                margin: 30px 0;
+            }
+            .input-box input{
+                width: 100%;
+                height:100%;
+                border:none;
+                outline: none;
+                border:2px solid #C8CED2;
+                border-radius: 30px;
+                font-size: 17px;
+                padding: 20px 45px 20px 20px;
+            }
+            .input-box input::placeholder{
+                color: black;
+            }
+            .input-box i{
+                position: absolute;
+                right: 20px;
+                top:50%;
+                transform: translateY(-50%);
+                font-size: 27px;
+            }
+            .remember-forget h6{
+                font-size: 15px;
+            }
+            .login .remember-forget{
+                display: flex;
+                justify-content: space-between;
+                font-size: 14.5px;
+                margin: -15px 0 -15px;
+            }
+            .remember-forget label input{
+                accent-color: #fff;
+                margin-top: #fff;
+            }
+            .remember-forget a:hover{
+                text-decoration: underline;
+            }
+            .login .btn{
+                width:80%;
+                height: 45px;
+                background: #A1D4F5;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                box-shadow: 0 0 10px black ;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 75px;
+                margin-left: 40px;
+            }
+            #welcome{
+                font-size: 15px;
+                text-align: center;
+                color:#3c79ea;
+            }
+            #rem{
+                padding-left: 20px;
+                margin-top: -14px;
+            }
+            .btn:hover{
+                background: #5BBAF9;
+            }
+            .program{
+                height: 900px;
+                width: 100%;
+                background: #FCFAFB;
+                margin-top: 62px;
+            }
+            #content1{
+                padding:70px 0 0 180px;
+            }
+            #line1{
+                width: 77%;
+                height: 0px;
+                border: 2px solid #8F9599;
+            }
+            .program-box1,.program-box2,.program-box3,.program-box4,.program-box5,.program-box6{
+                height: 350px;
+                width: 350px;
+                border: 1px solid white;
+                float: left;
+                border-radius: 10px;
+                margin-left: 210px;
+                margin-top: 40px;
+                overflow: hidden;
+
+            }
+            .program-box2,.program-box3,.program-box5,.program-box6{
+                margin-left:40px;
+            }
+            #pic1,#pic2,#pic3,#pic4,#pic5,#pic6{
+                height:300px;
+                cursor: pointer;
+                
+            }
+            #pic1{
+                background:url("images/motivation.jpg");
+                background-size: 350px 350px;
+                background-repeat: no-repeat;
+            }
+            #pic2{
+                background:url("images/mentorship.jpg");
+                background-size: 350px 350px;
+                background-repeat: no-repeat;
+            }
+            #pic3{
+                background:url("images/maha.jpg");
+                background-size: 350px 350px;
+                background-repeat: no-repeat;
+            }
+            #pic4{
+                background:url("images/One-to-One-Share.webp");
+                background-size: 350px 350px;
+                background-repeat: no-repeat;
+            }
+            #pic5{
+                background:url("images/councelling.jpeg");
+                background-size: 350px 350px;
+                background-repeat: no-repeat;
+            }
+            #pic6{
+                background:url("images/premium.avif");
+                background-size: 350px 350px;
+                background-repeat: no-repeat;
+            }
+            #dis1,#dis2,#dis3,#dis4,#dis5,#dis6{
+                font-size: 20px;
+                padding: 5px 10px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: center;
+            }
+            
+            .program-box1:hover{
+                box-shadow: 0 0 15px #B87B83;
+            }.program-box2:hover{
+                box-shadow: 0 0 15px #B87B83;
+            } .program-box3:hover{
+                box-shadow: 0 0 15px #B87B83;
+            } .program-box4:hover{
+                box-shadow: 0 0 15px #B87B83;
+            } .program-box5:hover{
+                box-shadow: 0 0 15px #B87B83;
+            } .program-box6:hover{
+                box-shadow: 0 0 15px #B87B83;
+            } 
+            .studyMaterial{
+                height: 380px;
+                width: 100%;
+                background: whitesmoke;
+                margin-top: 30px;
+            }
+            #content2{
+                text-align: center;
+                font-size: 30px;
+                padding-top: 30px;
+            }
+            #content2 span3{
+                font-size:25px;
+                color: #3c79ea;
+            }
+            #free-box1,#free-box2,#free-box3{
+                height: 100px;
+                width: 250px;
+                border: 0px solid black;
+                float: left;
+                margin-top: 30px;
+                margin-left:70px ;
+                box-shadow: 0 0 10px black;
+                border-radius: 10px;
+                /* background: white; */
+            }
+            #free-box1{
+                margin-left: 300px;
+                background:url("images/notes.jpg");
+                background-size: 100px 100px;
+                background-repeat: no-repeat;
+            }
+            #free-box2{
+                background: url("images/practice.png");
+                background-size: 100px 100px;
+                background-repeat: no-repeat;
+            }
+            #free-box3{
+                background:url("images/pyq.png");
+                background-size: 100px 100px;
+                background-repeat: no-repeat;
+            }
+            #free-image1,#free-image2,#free-image3{
+                font-size: 22px;
+                padding-left: 110px;
+                padding-top: 10px;
+                font-weight: bold;
+            }    
+            #free-image1 span4{
+                font-size: 15px;
+                color: #3c79ea;
+                cursor: pointer;
+            }
+            #free-image2 span5{
+                font-size: 15px;
+                color: #3c79ea;
+                cursor: pointer;
+            }
+            #free-image3 span6{
+                font-size: 15px;
+                color: #3c79ea;
+                cursor: pointer;
+            }
+            #free-image3 span6:hover{
+                color:black;
+            }
+            #free-image2 span5:hover{
+                color:black;
+            }#free-image1 span4:hover{
+                color:black;
+            }
+            .videos{
+                height: 550px;
+                width: 100%;
+                background: rgb(251, 250, 250);
+            }
+            #dis7{
+                padding:70px 0 0 180px;
+            }#line2{
+                width: 70%;
+                height: 0px;
+                border: 2px solid #8F9599;
+                margin-left: 175px;
+            }
+            #video-box{
+                height: 280px;
+                width: 520px;
+                border:1px solid none;
+                margin: 100px 0 0 500px;
+                background: url("images/experiment.webp");
+                background-size: 518px 350px;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow:  0 0 15px black;
+            }
+            #video-box:hover{
+                transform: translateY(-20px);
+            }
+            .mentors{
+                height:500px;
+                width: 100%;
+                background: whitesmoke;
+
+            }
+            #dis8{
+                padding:70px 0 0 180px;
+            }
+            #line3{
+                width: 70%;
+                height: 0px;
+                border: 2px solid #8F9599;
+                margin-left: 175px
+            }
+            #meet{
+                height: 280px;
+                width: 520px;
+                border:1px solid white;
+                border-radius: 10px;
+                margin: 70px 0 0 500px;
+                background:url("images/suraj.jpg");
+                background-size:520px 280px;
+                background-repeat: no-repeat;
+                box-shadow: 0 0 10px black;
+                animation: slider 18s step-start 3s infinite normal;
+                
+            }
+            @keyframes slider {
+                10%{
+                    background: url("images/suraj.jpg");
+                    background-size:520px 280px;
+                     background-repeat: no-repeat;
+                }
+                20%{
+                    background: url("images/dinker.jpg");
+                    background-size:520px 280px;
+                    background-repeat: no-repeat;
+                    background-position-y: -1px;
+                }
+                40%{
+                    background: url("images/anuj.jpg");
+                    background-size: 520px 280px;
+                    background-repeat: no-repeat;
+                }
+                60%{
+                    background: url("images/alok.jpg");
+                    background-size: 520px 280px;
+                    background-repeat: no-repeat;
+                    background-position-y: -1px;
+                }
+                80%{
+                    background: url("images/roy.jpg");
+                    background-size: 520px 280px;
+                    background-repeat: no-repeat;
+                }
+                100%{
+                    background: url("images/sir.jpg");
+                    background-size: 520px 280px;
+                    background-repeat: no-repeat;
+                }
+                
+            }
+            .review{
+                height:500px;
+                width: 100%;
+                background: whitesmoke;
+            }
+            #dis9{
+                padding:70px 0 0 180px;
+            }
+            #line4{
+                width: 70%;
+                height: 0px;
+                border: 2px solid #8F9599;
+                margin-left: 175px;
+            }
+            #review-box1,#review-box2,#review-box3,#review-box4{
+                height: 150px;
+                width: 250px;
+                border:1px solid black;
+                border-radius: 10px;
+                box-shadow: 0 0 10px black;
+                float:left;
+                margin-top: 100px;
+            }
+            #review-box1{
+                margin-left: 180px;
+                background: url("images/trichy.jpg");
+                background-size: 250px 150px;;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+            #review-box2,#review-box3,#review-box4{
+                margin-left: 25px;
+            }#review-box2{
+                background: url("images/bit.jpg");
+                background-size: 250px 150px;;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }#review-box3{
+                background: url("images/ranchi.jpg");
+                background-size: 250px 150px;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }#review-box4{
+                background: url("images/next.png");
+                background-size: 250px 160px;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+            .foot{
+                height: 350px;
+                width:100%;
+                background:black;
+               
+            }
+            
+            #content3{
+                height: 150px;
+                width:250px;
+                color: whitesmoke;
+                margin-left: 180px;
+                margin-top: 55px;
+                float: left;
+                border: 2px solid black;
+               font-size: 20px;
+            }
+            #quicklink{
+                height: 250px;
+                width:200px;
+                border: 2px solid black;
+                margin-left: 550px;
+                
+            }
+            #quick-head{
+                color: white;
+                font-size: 30px;
+                padding-top: 20px;
+            }
+            #quicklink ul li{
+                color: white;
+                font-size: 20px;
+                padding-top: 20px;
+                list-style-type: none;
+                padding-left: 20px;
+                cursor: pointer;
+            }
+            #quicklink ul li:hover{
+                color:#B87B83;
+            }
+            #implink{
+                height: 250px;
+                width:200px;
+                border: 2px solid black;
+                margin-left: 750px;
+                margin-top: -252px;
+            }
+            #important{
+                color: white;
+                font-size: 30px;
+                padding-top: 20px;
+                
+            }
+            #implink ul li{
+                color: white;
+                font-size: 20px;
+                padding-top: 20px;
+                list-style-type: none;
+                padding-left: 20px;
+                cursor: pointer;
+            }
+            #implink ul li:hover{
+                color:#B87B83;
+            }
+            #reach{
+                height: 250px;
+                width:200px;
+                border: 2px solid none;
+                margin-left: 1000px;
+                margin-top: -252px;
+            }
+            #reachus{
+                color: white;
+                font-size: 30px;
+                padding-top: 20px;
+                
+            }
+            #reach ul li{
+                color: white;
+                font-size: 20px;
+                padding-top: 20px;
+                list-style-type: none;
+                padding-left: 20px;
+            }
+            #follow{
+                height: 150px;
+                width:200px;
+                border: 2px solid none;
+                margin-left: 1250px;
+                margin-top: -325px;
+            }
+            #followus{
+                color: white;
+                font-size: 30px;
+                padding-top: 20px;
+                
+            }
+            #follow ul li{
+                color: white;
+                font-size: 20px;
+                padding-top: 20px;
+                list-style-type: none;
+                padding-left: 20px;
+                float: left;
+                cursor: pointer;
+            }
+            #follow ul li:hover{
+                color:#B87B83;
+            }
+            #samjhekya{
+                height: 150px;
+                width: 150px;
+                border: 2px solid none;
+                margin-left: 1300px;
+                margin-top: -80px;
+                background: url("images/WhatsApp\ Image\ 2023-09-25\ at\ 16.22.36.jpg");
+                background-size: 200px 200px;
+            }
+            #text1:hover,#text2:hover,#text3:hover,#text4:hover,#text5:hover,#text6:hover,#text7:hover{
+                 color: #3c79ea;
+            }
+            #drop3{
+                height: 180px;
+                width:210px;
+                border: 1px solid white;
+                box-shadow: 0 0 10px black;
+                background-color: white;
+                display: none;
+                position: relative;
+                z-index: 10;
+                border-radius: 8px;
+                position:absolute;
+                top: 50px;
+                color: black;
+                margin-top: -10px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #drop4{
+                height: 150px;
+                width:210px;
+                border: 1px solid white;
+                box-shadow: 0 0 10px black;
+                background-color: white;
+                display: none;
+                position: relative;
+                z-index: 10;
+                border-radius: 8px;
+                position:absolute;
+                top: 50px;
+                color: black;
+                margin-top: -10px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #drop5{
+                height: 150px;
+                width:210px;
+                border: 1px solid white;
+                box-shadow: 0 0 10px black;
+                background-color: white;
+                display: none;
+                position: relative;
+                z-index: 10;
+                border-radius: 8px;
+                position:absolute;
+                top: 50px;
+                color: black;
+                margin-top: -10px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #drop1,#drop2{
+                height: 100px;
+                width:200px;
+                border: 1px solid white;
+                box-shadow: 0 0 10px black;
+                background-color: white;
+                display: none;
+                position: relative;
+                z-index: 10;
+                border-radius: 8px;
+                position:absolute;
+                top: 50px;
+                color: black;
+                margin-top: -10px;
+            }
+            
+            #drop3{
+                left:730px;
+            }
+            #drop7{
+                height: 150px;
+                width:200px;
+                border: 1px solid white;
+                box-shadow: 0 0 10px black;
+                background-color: white;
+                display: none;
+                position: relative;
+                z-index: 10;
+                border-radius: 8px;
+                position:absolute;
+                top: 50px;
+                color: black;
+                margin-top: -10px;
+            }
+            #drop1 ul li,#drop2 ul li,#drop3 ul li,#drop4 ul li,#drop5 ul li,#drop7 ul li{
+                list-style-type: none;
+                padding-top: 15px;
+            }
+            #text1:hover #drop1,#text2:hover #drop2,#text3:hover #drop3,#text4:hover #drop4,#text5:hover #drop5,#text7:hover #drop7{
+                display: block;
+                position:absolute; 
+            }
+            #text1:hover #drop1 ul{
+                display: block;
+                position:absolute; 
+            }
+            #text1:hover #drop ul li{
+                display: flex;
+                padding: 10px;
+                float:left;
+                margin-left: 20px;
+                margin-top: 13px;
+                
+            }
+            #image-box{
+                height: 72px;
+                width: 100px;
+                border:2px solid none;
+                margin-top: -75px;
+                margin-left: 240px;
+                background: url("images/logo.jpg");
+                background-size: 68px 68px;
+                background-repeat: no-repeat;
+                background-position-y:5px;
+                backdrop-filter: blur(30px);
+                
+            }
+            .top{
+                float: left;
+            }
+            #content span3{
+                font-size: 12px;
+                
+            }
+    </style>
+    <body>
+        <div class="top">
+            <div id="image-box">
+                
+            </div>
+            <div id="text1"><b>Foundation</b><i class="fa-solid fa-caret-down"></i>
+                <div id="drop1">
+                    <ul>
+                        <li><b>class 9th</b></li>
+                        <li><b>class 10th</b></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="text2"><b>Boards</b><i class="fa-solid fa-caret-down"></i>
+               <div id="drop2">
+                <ul>
+                    <li><b>class 10th</b></li>
+                    <li><b>class 12th</b></li>
+                </ul>
+               </div>
+            </div>
+            <div id="text3"><b>NTSE</b><i class="fa-solid fa-caret-down"></i>
+                <div id="drop3">
+                    <ul>
+                        <li><b>Practice Ques.</b></li>
+                        <li><b>Problem Discuss</b></li>
+                        <li><b>PYQs</b></li>
+                        <li><b>Test</b></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="text4"><b>JEE</b><i class="fa-solid fa-caret-down"></i>
+                <div id="drop4">
+                    <ul>
+                        <li><b>for class 11th</b></li>
+                        <li><b>for class 12th</b></li>
+                        <li><b>Droppers</b></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div id="text5"><b>NEET</b><i class="fa-solid fa-caret-down"></i>
+                <div id="drop5">
+                    <ul>
+                        <li><b>for class 11th</b></li>
+                        <li><b>for class 12th</b></li>
+                        <li><b>Droppers</b></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="text7"><b>More</b><i class="fa-solid fa-caret-down"></i>
+                <div id="drop7">
+                    <ul>
+                        <li><b>contact us</b></li>
+                        <li><b>Queries</b></li>
+                        <li><b>results</b></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="text6"><b>News</b></div>
+        </div>
+            <div class="main">
+                <div id="content">
+                   <b>Best Place For Students <br><span1>Guidance | Mentor  </span1><br><h6>for Class 9-12 | NTSE | JEE | NEET</h6></b><br><span2>College Counselling,Motivation,Mentorship Programs <br> and many more .....</span2>
+                   <br><span3><i>beyond limit....<br>....to infinity</i></span3> 
+
+                   <div class="login">
+                    <form action="">
+                        <div id="log"><h5>login</h5></div>
+                        <p id="welcome"><span id="DynUser"></span></p>
+                        <div class="input-box">
+                            <input type="text" id="name" placeholder="Username" required>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Password" required>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="remember-forget">
+                            <!-- <label><input type="checkbox"><h6 id="rem">Remember me</h6></label> -->
+                            <a href="#"><h6>Forget password?</h6></a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+             </div>
+             <div class="program">
+                <div id="content1">
+                    <h1>Our Programes</h1>
+                    <div id="line1"></div>
+                    
+                </div>
+                <div class="program-box1">
+                    <div id="pic1"></div>
+                    <div id="dis1">Motivation</div>
+                </div>
+                <div class="program-box2">
+                    <div id="pic2"></div>
+                    <div id="dis2">Mentorship</div>
+                </div>
+                <div class="program-box3">
+                    <div id="pic3"></div>
+                    <div id="dis3">Maha-Mentorship</div>
+                </div>
+                <div class="program-box4">
+                    <div id="pic4"></div>
+                    <div id="dis4">One-To-One Mentor</div>
+                </div>
+                <div class="program-box5">
+                    <div id="pic5"></div>
+                    <div id="dis5">College Counselling</div>
+                </div>
+                <div class="program-box6">
+                    <div id="pic6"></div>
+                    <div id="dis6">Premium Program</div>
+                </div>
+                
+             </div>
+             <div class="studyMaterial">
+                <div id="content2"><h1>Study Materials</h1><span3><h1>FREE</h1></span3></div>
+                <div id="free-box1">
+                    <div id="free-image1">Short Notes<br><span4>Best Handwritten shortNotes JEE,NEET,Boards</span4></div>
+                    
+                </div>
+                <div id="free-box2">
+                    <div id="free-image2">Practice<br><span5>Accurate practice sets for JEE,NEET,Boards</span5></div>
+                    
+                </div>
+                <div id="free-box3">
+                    <div id="free-image3">PYQs<br><span6>Last 5 year PYQ for JEE,NEET,Boards</span6></div>
+                    
+                </div>
+             </div>
+             <div class="videos">
+                <div id="dis7"><h1>Experimental Videos</h1></div>
+                <div id="line2"></div>
+                <div id="video-box"></div>
+             </div>
+             <div class="mentors">
+                <div id="dis8"><h1>Mentors</h1></div>
+                <div id="line3"></div>
+                <div id="meet"></div>
+             </div>
+             <div class="review">
+                <div id="dis9"><h1>College Reviews</h1></div>
+                <div id="line4"></div>
+                <div id="review-box1"></div>
+                <div id="review-box2"></div>
+                <div id="review-box3"></div>
+                <div id="review-box4"></div>
+             </div>
+             <div class="foot">
+                <div id="foot-logo"></div>
+                <div id="content3">Mentoring, Guidance, Counselling yourself with mentors from Our Team(IITs,NITs,IIITs,Teir-one Gov. College{RGIPT} and NEET Qualifiers) in an easy and simplify manner.Who knows each and every aspect of Exam.  </div>
+                <div id="quicklink">
+                    <div id="quick-head">Quick Link</div>
+                    <ul>
+                        <li>Home</li>
+                        <li>programs</li>
+                        <li>Experiment</li>
+                    </ul>
+                </div>
+                <div id="implink">
+                    <div id="important">Important Link</div>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Refund Policy</li>
+                        <li>Term of Service</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div id="reach">
+                    <div id="reachus">Reach Us</div>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i>  +91-8986478390</li>
+                        <li> <i class="fa-solid fa-envelope"></i>  xyz@gmail.com</li>
+                        <li> <i class="fa-solid fa-map-location-dot"></i>  Patna</li>
+                    </ul>
+                </div>
+                <div id="samjhekya"></div>
+                <div id="follow">
+                    <div id="followus">Follow Us</div>
+                    <ul>
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-telegram"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+
+             </div>
+
+                <script>
+                    const Userinput=document.getElementById('name');
+                    const dynName=document.getElementById('DynUser');
+            
+                    Userinput.addEventListener('input',function () {
+                       dynName.textContent='Welcome, '+Userinput.value; 
+                    });
+            
+                </script>            
+            
+    </body>
+</html>
